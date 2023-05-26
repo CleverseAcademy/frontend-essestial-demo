@@ -1,0 +1,29 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap");
+
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: cornsilk;
+}
+
+#title {
+  color: red;
+}
+
+.milestone-card {
+  background-color: lightgrey;
+  width: 50%;
+  height: auto;
+  border-radius: 8px;
+  padding: 10px;
+  margin: 24px 0;
+  box-sizing: border-box;
+}
+
+a:hover {
+  color: red;
+}
+
+input:focus {
+  background-color: black;
+  color: white;
+}
