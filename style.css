@@ -1,20 +1,37 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap");
 
+* {
+  margin: 0;
+}
+
 body {
   font-family: "Poppins", sans-serif;
-  background-color: cornsilk;
+  background-color: #eee;
 }
 
 #title {
   color: red;
 }
 
+.milestone-container {
+  display: flex;
+  gap: 10px;
+  margin: 20px;
+}
+
 .milestone-card {
-  background-color: lightgrey;
+  background-color: white;
+  box-shadow: 0 0 10px 5px rgb(0 0 0 / 0.1);
+  padding: 20px;
+
+  display: flex;
+  flex-direction: column;
+
+  justify-content: space-between;
+
   width: 50%;
   height: auto;
   border-radius: 8px;
-  padding: 10px;
   margin: 24px 0;
   box-sizing: border-box;
 }
