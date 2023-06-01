@@ -5,11 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
-    <script src="https://cdn.tailwindcss.com"></script>
     <title>Cleverse Academy</title>
   </head>
   <body>
-    <h1 class="text-red-500 font-bold text-3xl">Hello, World</h1>
+    <h1 id="title">Hello, World</h1>
     <h2>This is heading 2</h2>
     <p>This is a paragraph</p>
     <hr />
@@ -17,7 +16,7 @@
       <div class="milestone-card">
         <div>
           <h2>Frontend Milestone</h2>
-          <ol>
+          <ol id="frontend-milestone">
             <li>JavaScript</li>
             <li>HTML</li>
             <li>CSS</li>
@@ -29,7 +28,7 @@
       <div class="milestone-card">
         <div>
           <h2>Backend Milestone</h2>
-          <ol>
+          <ol id="backend-milestone">
             <li>NodeJS</li>
             <li>Docker</li>
             <li>TypeScript</li>
@@ -42,14 +41,17 @@
     <div>
       <p>Form</p>
       <form>
-        <label for="username">Username:</label>
-        <input type="text" id="username" />
-
-        <label for="password">Password:</label>
-        <input type="password" id="password" />
-
-        <input type="submit" value="Login" />
+        <label for="frontend">Add Front-end Milestone:</label>
+        <input type="text" id="frontend" required />
+        <button id="add-front">Submit</button>
+      </form>
+      <br />
+      <form>
+        <label for="backend">Add Back-end Milestone:</label>
+        <input type="text" id="backend" required />
+        <button id="add-back">Submit</button>
       </form>
     </div>
   </body>
+  <script src="script.js"></script>
 </html>
