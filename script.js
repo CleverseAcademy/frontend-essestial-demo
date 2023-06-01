@@ -8,10 +8,13 @@ frontendButton.addEventListener("click", (e) => {
   e.preventDefault()
   const newList = document.createElement("li")
   // <li></li>
-  newList.textContent = frontendInput.value
+  if (!frontendInput.value) {
+    alert("Please input something!")
+  } else {
+    newList.textContent = frontendInput.value
+    frontendMilestonesList.appendChild(newList)
+  }
   // <li>value</li>
-
-  frontendMilestonesList.appendChild(newList)
 })
 
 const backendInput = document.getElementById("backend")
@@ -24,7 +27,10 @@ backendButton.addEventListener("click", (e) => {
   e.preventDefault()
   const newList = document.createElement("li")
 
-  newList.textContent = backendInput.value
-
-  backendMilestonesList.appendChild(newList)
+  if (!backendInput.value) {
+    alert("Please input something!")
+  } else {
+    newList.textContent = backendInput.value
+    backendMilestonesList.appendChild(newList)
+  }
 })
